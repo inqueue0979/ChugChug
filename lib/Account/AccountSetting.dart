@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../Widgets/Bar_Widgets.dart';
+
 class AccountSettingPage extends StatefulWidget {
   @override
   _AccountSettingPageState createState() => _AccountSettingPageState();
@@ -56,7 +58,7 @@ class _AccountSettingPageState extends State<AccountSettingPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('계정 설정'),
+        title: Top_Logos("Account", 16),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
